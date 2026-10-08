@@ -1,0 +1,44 @@
+schema_version: 1
+
+# 雷达在世界坐标系中的位置和朝向；yaw=0 表示雷达朝世界 +x。
+radar:
+  position_m: [0.0, 0.0, 0.0]
+  yaw_deg: 0.0
+
+# 新生主要修改这一段。可以增加、删除或移动目标。
+scene:
+  - name: front_target
+    position_m: [6.0, 0.0, 0.0]
+    scale_m: [0.35, 0.35, 0.35]
+    quaternion_wxyz: [1.0, 0.0, 0.0, 0.0]
+    opacity: 0.90
+    reflectance: 1.00
+
+  - name: left_target
+    position_m: [8.0, 2.8, 0.0]
+    scale_m: [0.55, 0.25, 0.30]
+    quaternion_wxyz: [1.0, 0.0, 0.0, 0.0]
+    opacity: 0.75
+    reflectance: 0.65
+
+  - name: right_target
+    position_m: [10.0, -3.5, 0.0]
+    scale_m: [0.30, 0.60, 0.30]
+    quaternion_wxyz: [1.0, 0.0, 0.0, 0.0]
+    opacity: 0.85
+    reflectance: 0.80
+
+sensor:
+  range_resolution_m: 0.1
+  range_bins: 128
+  intermediate_azimuth_resolution_deg: 0.5
+  output_azimuth_resolution_deg: 1.0
+  azimuth_beamwidth_deg: 2.0
+  spectral_leakage_enabled: true
+  sinc_width_m: 1.0
+  near_plane: -10.0
+  far_plane: 10000000000.0
+
+visualization:
+  dynamic_range_db: 45.0
+
