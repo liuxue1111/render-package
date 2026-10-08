@@ -112,4 +112,3 @@ git push -u origin main
 
 底层 CUDA 实现来自 [UM AutoBots RadarSplat](https://github.com/umautobots/radarsplat)。
 归属与版本见 `NOTICE.md`，许可见 `LICENSE`。
-
