@@ -1,6 +1,6 @@
 # RadarSplat Renderer Demo
 
-一个完全独立的 RadarSplat 距离—方位角（RA）渲染教学项目。新生只需修改
+一个完全独立的 RadarSplat 距离—方位角（RA）渲染教学项目。使用者只需修改
 `configs/example.yaml`，即可观察场景、RA 功率图和占用图的变化。
 
 它不导入 `radarsplat_rio`，不包含训练、建图或数据集代码；底层计算仍使用
@@ -10,7 +10,7 @@ RadarSplat 官方 CUDA rasterizer。
 
 ```text
 radarsplat-renderer-demo/
-├── configs/example.yaml   # 新生主要修改这里
+├── configs/example.yaml   # 主要修改这里
 ├── demo.py                # 独立渲染和可视化入口
 ├── outputs/               # 自动生成的结果
 ├── environment.yml
